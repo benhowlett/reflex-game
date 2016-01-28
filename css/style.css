@@ -1,0 +1,127 @@
+body {
+	background-color: #FFFFFF;
+	color: #FA6900;
+	font-family: sans-serif;
+}
+
+button {
+	display: block;
+	height: 30px;
+	width: 100px;
+	border: 3px solid #F38630;
+	border-radius: 7px;
+	text-align: center;
+	margin: 0 auto 5px auto;
+	background-color: #E0E4CC;
+	color: #FA6900;
+	transition: background-color 0.25s;
+}
+
+button:hover {
+	background-color: #69D2E7;
+}
+
+button:active {
+	background-color: #FA6900;
+	color: #E0E4CC;
+	border-color: #E0E4CC;
+}
+
+button:focus {
+	outline: none;
+}
+
+.centered {
+	display: block;
+	margin: 0 auto;
+}
+
+#container {
+	width: 42vw;
+	height: 37vw;
+	background-color: #69D2E7;
+	border: 4px solid #F38630;
+	border-radius: 5%;
+	padding: 25px 25px 50px 25px;
+}
+
+
+#box {
+	position:relative;
+	width: 10%;
+	height: 10%;
+	background-color: red;
+	display: none;
+}
+
+#gameField {
+	width: 75%;
+	height: 94%;
+	background-color: #E0E4CC;
+	border: 3px solid #F38630;
+	margin: 20px 0 0 25px;
+}	
+
+#title, #score, #highScore {
+	width: 100%;
+	text-align: center;
+}
+
+#title {
+	font-size: 3vw;
+}
+
+#score, #highScore {
+	font-size: 1vw;
+}
+
+#innerContainer {
+	width: 100%;
+	height: 90%;
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+#options {
+	width: 20%;
+	margin-top: 20px;
+}
+
+#score, #highScore {
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+@media (max-width: 1300px) {
+
+	#container {
+		width: 63vw;
+		height: 55vw;
+	}
+
+	#title {
+		font-size: 4.5vw;
+	}	
+
+	#score, #highScore {
+		font-size: 1.5vw;
+	}
+
+}
+
+@media (max-width: 800px) {
+
+	#container {
+		width: 84vw;
+		height: 74vw;
+	}
+
+	#title {
+		font-size: 6vw;
+	}
+
+	#score, #highScore {
+		font-size: 2vw;
+	}
+
+}
